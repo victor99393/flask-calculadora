@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resultado - Calculadora</title>
+
+    <link rel="icon" href="/favicon.png?v=2" type="image/png">
+    <link rel="stylesheet" href="/css/result.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="/">Início</a>
+        <a href="/calculadora">Calculadora</a>
+    </nav>
+
+    <main>
+
+        <h1>Resultado</h1>
+
+        <p id="resultado"></p>
+
+        <a href="/calculadora" id="voltar">Voltar para calculadora</a>
+
+    </main>
+
+    <script>
+        const resultado = localStorage.getItem("resultado");
+
+        document.getElementById("resultado").textContent = resultado;
+    </script>
+
+</body>
+
+</html>
